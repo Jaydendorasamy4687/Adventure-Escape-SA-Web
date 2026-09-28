@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Escape SA - Eco-Tourism Platform</title>
+</head>
+<body>
+
+    <!-- NAVIGATION HEADER -->
+    <header>
+        <h1>Adventure Escape SA</h1>
+        <p><em>South Africa's Premier Eco-Tourism & Outdoor Adventure Booking Platform</em></p>
+        <nav>
+            <a href="#home">Home</a> |
+            <a href="#about">About Us</a> |
+            <a href="#activities">Activities</a> |
+            <a href="#fees">Calculate Fees</a> |
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    <hr>
+
+    <!-- PAGE 1: HOME -->
+    <section id="home">
+        <h2>Escape into the Wild</h2>
+        <p>Experience ziplining, kayaking, and rock climbing across South Africa's most breathtaking scenic locations.</p>
+
+        <h3>Quick Booking Availability Search</h3>
+        <form>
+            <label for="search-activity">Select Activity:</label>
+            <select id="search-activity" name="search-activity">
+                <option value="ziplining">Ziplining Canopy Tour</option>
+                <option value="kayaking">River Kayaking</option>
+                <option value="rock-climbing">Rock Climbing</option>
+            </select>
+            <br><br>
+
+            <label for="search-date">Select Date:</label>
+            <input type="date" id="search-date" name="search-date">
+            <br><br>
+
+            <label for="search-guests">Number of Guests:</label>
+            <input type="number" id="search-guests" name="search-guests" min="1" value="1">
+            <br><br>
+
+            <button type="button">Check Availability</button>
+        </form>
+
+        <h3>Featured Outdoor Experiences</h3>
+        <article>
+            <h4>Ziplining Canopy Tour</h4>
+            <p>Soar high above indigenous forest canopies with fully accredited SAYTC guides.</p>
+            <p><strong>Price:</strong> R400 per person</p>
+            <a href="#activities">View Details</a>
+        </article>
+        <br>
+        <article>
+            <h4>River Kayaking Adventure</h4>
+            <p>Navigate scenic river bends and moderate rapids with safety gear provided.</p>
+            <p><strong>Price:</strong> R350 per person</p>
+            <a href="#activities">View Details</a>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- PAGE 2: ABOUT US -->
+    <section id="about">
+        <h2>About Adventure Escape SA</h2>
+        <p>Founded by outdoor advocate Liam Daniels, Adventure Escape SA delivers world-class, sustainable eco-tourism experiences committed to wildlife conservation and safety integrity.</p>
+
+        <h3>Certifications & Safety Standards</h3>
+        <ul>
+            <li>SAYTC-Certified Outdoor Activity Guides</li>
+            <li>FGASA Accredited Eco-Tour Operators</li>
+            <li>Daily Multi-Point Equipment Inspections</li>
+            <li>Comprehensive First-Aid Trained Leaders</li>
+        </ul>
+
+        <h3>Platform Metrics</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Performance Metric</th>
+                    <th>Platform Statistic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Guided Adventures Completed</td>
+                    <td>12,000+</td>
+                </tr>
+                <tr>
+                    <td>Average Guest Safety Rating</td>
+                    <td>4.9 / 5.0</td>
+                </tr>
+                <tr>
+                    <td>Years Operating Experience</td>
+                    <td>15 Years</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- PAGE 3: ACTIVITIES CATALOG -->
+    <section id="activities">
+        <h2>Outdoor Experience Catalog</h2>
+
+        <article id="ziplining">
+            <h3>1. Ziplining Canopy Tour</h3>
+            <p>High-speed zip slides traversing lush mountain valleys and river canyons.</p>
+            <ul>
+                <li><strong>Duration:</strong> 2 Hours</li>
+                <li><strong>Difficulty Level:</strong> Moderate</li>
+                <li><strong>Base Price:</strong> R400 per participant</li>
+                <li><strong>Gear Provided:</strong> Full Body Harness, Safety Helmet, Gloves</li>
+            </ul>
+            <a href="#fees"><button type="button">Book Ziplining</button></a>
+        </article>
+        <br>
+
+        <article id="kayaking">
+            <h3>2. River Kayaking</h3>
+            <p>Guided paddling along pristine river courses suitable for both beginners and experts.</p>
+            <ul>
+                <li><strong>Duration:</strong> 3 Hours</li>
+                <li><strong>Difficulty Level:</strong> Easy to Moderate</li>
+                <li><strong>Base Price:</strong> R350 per participant</li>
+                <li><strong>Gear Provided:</strong> Life Jacket, Paddle, Waterproof Container</li>
+            </ul>
+            <a href="#fees"><button type="button">Book Kayaking</button></a>
+        </article>
+        <br>
+
+        <article id="rock-climbing">
+            <h3>3. Rock Climbing</h3>
+            <p>Conquer natural granite cliff faces with secure top-rope safety systems.</p>
+            <ul>
+                <li><strong>Duration:</strong> 4 Hours</li>
+                <li><strong>Difficulty Level:</strong> Advanced</li>
+                <li><strong>Base Price:</strong> R500 per participant</li>
+                <li><strong>Gear Provided:</strong> Harness, Climbing Shoes, Helmet, Chalk Bag</li>
+            </ul>
+            <a href="#fees"><button type="button">Book Rock Climbing</button></a>
+        </article>
+    </section>
+
+    <hr>
+
+    <!-- PAGE 4: CALCULATE FEES -->
+    <section id="fees">
+        <h2>Group Booking Fee Calculator</h2>
+        <p>Select your outdoor activities and input group size. Groups of 5 or more participants automatically receive a 10% tiered discount!</p>
+
+        <form>
+            <fieldset>
+                <legend>Select Activities</legend>
+                <input type="checkbox" id="fee-zip" name="activity-choice" value="400">
+                <label for="fee-zip">Ziplining Canopy Tour (R400 / person)</label><br>
+
+                <input type="checkbox" id="fee-kayak" name="activity-choice" value="350">
+                <label for="fee-kayak">River Kayaking (R350 / person)</label><br>
+
+                <input type="checkbox" id="fee-climb" name="activity-choice" value="500">
+                <label for="fee-climb">Rock Climbing (R500 / person)</label>
+            </fieldset>
+            <br>
+
+            <label for="fee-participants">Number of Participants:</label>
+            <input type="number" id="fee-participants" name="fee-participants" min="1" value="1">
+            <br><br>
+
+            <button type="button">Calculate Subtotal</button>
+        </form>
+
+        <h3>Cost Estimation Breakdown</h3>
+        <table border="1">
+            <tr>
+                <td>Subtotal:</td>
+                <td>R0.00</td>
+            </tr>
+            <tr>
+                <td>Group Discount (10% for 5+ Guests):</td>
+                <td>R0.00</td>
+            </tr>
+            <tr>
+                <td><strong>Final Estimated Total:</strong></td>
+                <td><strong>R0.00</strong></td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- PAGE 5: CONTACT US -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <h3>Location & Support</h3>
+        <p><strong>Physical Address:</strong> Western Cape Outdoor Hub, South Africa</p>
+        <p><strong>Operating Hours:</strong> Monday – Sunday: 08:00 – 17:00</p>
+        <p><strong>Support Email:</strong> info@adventureescapesa.co.za</p>
+        <p><strong>Phone:</strong> +27 21 555 0199</p>
+
+        <h3>Send an Inquiry</h3>
+        <form>
+            <label for="contact-name">Full Name:</label><br>
+            <input type="text" id="contact-name" name="contact-name" required><br><br>
+
+            <label for="contact-email">Email Address:</label><br>
+            <input type="email" id="contact-email" name="contact-email" required><br><br>
+
+            <label for="contact-phone">Phone Number:</label><br>
+            <input type="tel" id="contact-phone" name="contact-phone" required><br><br>
+
+            <label for="contact-message">Inquiry Details:</label><br>
+            <textarea id="contact-message" name="contact-message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Send Inquiry</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Adventure Escape SA. All rights reserved. Work Integrated Learning (XHAW5112) Project.</p>
+    </footer>
+
+</body>
+</html>
